@@ -194,6 +194,10 @@
     <Compile Include="Migrations\202101090545117_AddForeignKeyProperties.Designer.cs">
       <DependentUpon>202101090545117_AddForeignKeyProperties.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101101813003_AddNameFieldToApplicationUser.cs" />
+    <Compile Include="Migrations\202101101813003_AddNameFieldToApplicationUser.Designer.cs">
+      <DependentUpon>202101101813003_AddNameFieldToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -296,6 +300,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101090545117_AddForeignKeyProperties.resx">
       <DependentUpon>202101090545117_AddForeignKeyProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101101813003_AddNameFieldToApplicationUser.resx">
+      <DependentUpon>202101101813003_AddNameFieldToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

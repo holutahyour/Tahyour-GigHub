@@ -7,6 +7,7 @@
 
 @using (Html.BeginForm("Create", "Gig"))
 {
+    <p class="alert alert-danger">All Fleids are required!</p>
     @Html.AntiForgeryToken()
 
     <div class="form-group">
