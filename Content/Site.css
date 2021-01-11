@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 90px;
     padding-bottom: 20px;
     font-family: Montserrat, "Helvetica Neue", Helvetica
 }
@@ -72,3 +72,48 @@ span.field-validation-error {
     color: #fff;
     background-color: #a9444275;
 }
+
+/*Page-Level Styles*/
+.upcoming-gigs{
+    list-style: none;
+}
+
+.upcoming-gigs > li{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.upcoming-gigs > li .date {
+    background-color: red;
+    width: 60px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.upcoming-gigs > li .date .month {
+    font-weight: 700;
+    color: white;
+    padding: 2px 6px;
+}
+
+.upcoming-gigs > li .date .day{
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 6px 12px;
+}
+
+.upcoming-gigs > li .details{
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+
+.upcoming-gigs > li .details .name{
+    font-weight: 700;
+    display: block;
+}
+.upcoming-gigs > li .details .genre{
+    font-size: 15px
+}
+
