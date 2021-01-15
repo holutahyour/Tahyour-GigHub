@@ -53,13 +53,13 @@ span.field-validation-error {
     border-radius: 0;
 }
 
-.btn{
+.cus-btn {
     padding: 10px 60px;
     border-radius: 100px;
     transition: all .2s ease
 }
 
-.btn:hover{
+.cus-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0px 5px 10px 0 rgba(0,0,0,0.4);
 }
@@ -114,6 +114,6 @@ span.field-validation-error {
     display: block;
 }
 .upcoming-gigs > li .details .genre{
-    font-size: 15px
+    font-size: 14px
 }
 
