@@ -19,6 +19,7 @@ namespace GigHub.Controllers
         }
         public ActionResult Index()
         {
+            var user = User.Identity.IsAuthenticated;
             var upcomingGigs = _context.Gigs
                 .Include(m => m.Artist)
                 .Include(m => m.Genre)
@@ -27,7 +28,7 @@ namespace GigHub.Controllers
             var viewModel = new HomeViewModel
             {
                 UpcomingGigs = upcomingGigs,
-                ShowActions = User.Identity.IsAuthenticated
+                ShowActions = user
             };
             return View(viewModel);
         }
