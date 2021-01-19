@@ -30,6 +30,25 @@ span.field-validation-error {
     font-size: 12px;
 }
 
+.v-offset-1{
+    margin-bottom: 1px;
+}
+.v-offset-2{
+    margin-bottom: 2px;
+}
+.v-offset-3{
+    margin-bottom: 10px;
+}
+.v-offset-4{
+    margin-bottom: 20px;
+}
+.v-offset-5{
+    margin-bottom: 40px;
+}
+.v-offset-6{
+    margin-bottom: 80px;
+}
+
 /*Bootstrap overrides*/
 
 .navbar-inverse {

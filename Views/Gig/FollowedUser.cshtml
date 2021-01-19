@@ -1,0 +1,15 @@
+﻿@model FollowingHub.ViewModel.FollowingViewModel
+@{
+    ViewBag.Title = "Followed User";
+}
+
+<h2>Followed User</h2>
+
+@foreach (var following in Model.FollowedUsers)
+{
+    <ul>
+        @following.Name
+    </ul>
+}
+
+
