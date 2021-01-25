@@ -21,6 +21,18 @@ namespace GigHub.Controllers
         }
 
         [Authorize]
+        public ActionResult MyGigs()
+        {
+            var userId = User.Identity.GetUserId();
+
+            var gigs = _context.Gigs
+                .Where(g => g.ArtistId == userId && g.DateTime > DateTime.Now)
+                .Include(g => g.Genre)
+                .ToList();
+            return View(gigs);
+        }
+
+        [Authorize]
         public ActionResult Create()
         {
             var viewModel = new GigFormViewModel
@@ -30,6 +42,7 @@ namespace GigHub.Controllers
 
             return View(viewModel);
         }
+
 
         [Authorize]
         [HttpPost]
